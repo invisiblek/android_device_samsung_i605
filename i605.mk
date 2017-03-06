@@ -43,5 +43,3 @@ NEEDS_GPS_MSB_DISABLED := true
 
 # Include common makefile
 $(call inherit-product, device/samsung/t0lte/common.mk)
-
-$(call inherit-product-if-exists, vendor/samsung/t0ltecdma/t0ltecdma-vendor.mk)
