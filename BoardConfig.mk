@@ -29,3 +29,7 @@ BOARD_RECOVERY_SWIPE := true
 # assert
 TARGET_OTA_ASSERT_DEVICE := t0ltevzw,t0ltecdma,i605,SCH-I605
 
+# TWRP Support - Optional
+ifeq ($(WITH_TWRP),true)
+-include device/samsung/i605/twrp.mk
+endif
